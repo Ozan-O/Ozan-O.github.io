@@ -95,7 +95,7 @@ function pageTransitions(){
     //Sections active class
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;
-        
+
         if(id){
             //hide other sections
             sections.forEach((section) =>{
@@ -110,8 +110,16 @@ function pageTransitions(){
             const element = document.getElementById(id);
             element.classList.add('active');
         }
-    });
+    });    
 }
+
+const themeBtn = document.querySelector('.theme-btn');
+
+themeBtn.addEventListener('click', (e)=>{
+        let element = document.body;
+
+        element.classList.toggle('light-mode');
+});
 
 function activateInfo(id){
     let infoPane = document.getElementById(id);
