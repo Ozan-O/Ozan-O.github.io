@@ -3,7 +3,7 @@ const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 
-function PageTransitions(){
+function pageTransitions(){
     //Button click active class
     for(let i = 0; i < sectBtn.length; i++){
         sectBtn[i].addEventListener('click', function(){
@@ -13,9 +13,8 @@ function PageTransitions(){
         });
     }
 
-    onwheel = (e) => {
-        console.log(e.deltaY);
-    
+    //Change page on scroll
+    onwheel = (e) => {    
         let sect = "";
         let btn = ""; 
     
@@ -30,8 +29,6 @@ function PageTransitions(){
                 for(let i = 1; i <= 5; i++){
                     let str = 'sec';
                     let ctr = 'control-'
-
-                    console.log(str);
 
                     if(section.classList.contains(str + i)){
                         if(e.deltaY > 0){
@@ -98,7 +95,7 @@ function PageTransitions(){
     //Sections active class
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;
-        console.log(id);
+        
         if(id){
             //hide other sections
             sections.forEach((section) =>{
@@ -116,4 +113,14 @@ function PageTransitions(){
     });
 }
 
-PageTransitions();
+function activateInfo(id){
+    let infoPane = document.getElementById(id);
+
+    infoPane.classList.add('active-pane');
+
+    infoPane.addEventListener('click', function(){
+        infoPane.classList.remove('active-pane');
+    });
+}
+
+pageTransitions();
