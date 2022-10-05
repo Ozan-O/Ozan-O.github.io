@@ -127,7 +127,12 @@ function activateInfo(id){
     infoPane.classList.add('active-pane');
 
     infoPane.addEventListener('click', function(){
-        infoPane.classList.remove('active-pane');
+        infoPane.classList.replace('active-pane', 'remove-pane');
+        infoPane.addEventListener('animationend', function(){
+            console.log("end");
+            infoPane.classList.remove('remove-pane');
+        });
+        console.log('end of function');
     });
 }
 
