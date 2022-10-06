@@ -343,12 +343,10 @@ section{
 .about-container{
     text-align: left;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 20%;
     padding-top: 3.5 rem;
     padding-bottom: 5rem;
     .right-about{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
         .about-item{
             border: 1px solid var(--color-grey-5);
@@ -390,6 +388,10 @@ section{
                 }
             }
         }
+    }
+
+    .left-about{
+        padding-right: 2rem;
     }
 }
 

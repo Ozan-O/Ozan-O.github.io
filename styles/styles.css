@@ -356,13 +356,11 @@ section {
 .about-container {
   text-align: left;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 20%;
   padding-top: 3.5 rem;
   padding-bottom: 5rem;
 }
 .about-container .right-about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 }
 .about-container .right-about .about-item {
@@ -404,6 +402,9 @@ section {
   width: 2rem;
   height: 2px;
   background-color: var(--color-grey-5);
+}
+.about-container .left-about {
+  padding-right: 2rem;
 }
 
 .port-text {
