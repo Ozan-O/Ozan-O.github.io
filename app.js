@@ -14,7 +14,7 @@ function pageTransitions(){
     }
 
     //Change page on scroll
-    onwheel = (e) => {    
+    /*onwheel = (e) => {    
         let sect = "";
         let btn = ""; 
     
@@ -79,7 +79,7 @@ function pageTransitions(){
                         sect = "sec4";
                         btn = "control-5"
                     }
-                }*/
+                }
             }
         })   
         
@@ -90,7 +90,7 @@ function pageTransitions(){
 
         let elem = document.getElementsByClassName(sect);
         elem[0].classList.add('active');
-    };
+    };*/
 
     //Sections active class
     allSections.addEventListener('click', (e) =>{
