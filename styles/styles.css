@@ -529,7 +529,7 @@ section {
   filter: var(--svg-filter-1);
   height: 2rem;
   width: 2rem;
-  padding-top: 5px;
+  padding-top: 8px;
   /* Other styles here */
 }
 
