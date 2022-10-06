@@ -259,6 +259,7 @@ section{
             margin: 1.5rem 0;
             line-height: 2rem;
         }
+
     }
 }
 
@@ -343,7 +344,7 @@ section{
 .about-container{
     text-align: left;
     display: grid;
-    grid-template-columns: 1fr 20%;
+    grid-template-columns: 4fr 1fr;
     padding-top: 3.5 rem;
     padding-bottom: 5rem;
     .right-about{
@@ -364,7 +365,7 @@ section{
                 display: flex;
                 flex-direction: column;
                 .large-text{
-                    font-size: 3rem;
+                    font-size: 2rem;
                     font-weight: 700;
                     color: var(--color-secondary);
                 }
@@ -527,6 +528,26 @@ section{
     /* Other styles here */
 }
 
+.home-icons{
+    i{
+        font-size: 3rem;
+        padding-left: 10px;
+    }
+    :first-child{
+        padding-left: 7px;
+    }
+    :last-child{
+        font-size: 1.5rem;
+    }
+}
+.c-icon2 {
+    filter: var(--svg-filter-1);
+    height: 3rem;
+    width: 3rem;
+    padding-top: 12px;
+    /* Other styles here */
+}
+
 .portfolio-item:hover .hover-item{
     opacity: 100%;
     transform: scale(1);
@@ -568,36 +589,6 @@ section{
                 }
             }
         }
-
-        .contact-icon{
-            display: flex;
-            margin-top: 2rem;
-            a{
-                display: flex;
-                align-items: center;   
-                color: var(--color-white);
-                background-color: var(--color-grey-5);
-                cursor: pointer;
-                justify-content: center;
-                height: 50px;
-                width: 50px;
-                border-radius: 50%;
-                margin: 0 .4rem;
-                transition: all .4s ease-in-out;
-                &:hover{
-                    background-color: var(--color-secondary);
-                    i{
-                        color: var(--color-primary);
-                    }
-                }
-                i{
-                    display: flex;
-                    align-items: center;
-                    justify-self: center;
-                    font-size: 1.3rem;
-                }
-            }
-        }
     }
 
     .right-contact{
@@ -617,6 +608,42 @@ section{
                 width: 100%; 
                 color: var(--color-white);
                 resize: none;
+            }
+        }
+        .form-header{
+            display: flex;
+            .header-text{
+                margin-top: 1rem;
+                font-size: 1.1rem;
+            }
+            .contact-icon{
+                display: flex;
+                margin-left: 2rem;
+                a{
+                    display: flex;
+                    align-items: center;   
+                    color: var(--color-white);
+                    background-color: var(--color-grey-5);
+                    cursor: pointer;
+                    justify-content: center;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    margin: 0 .4rem;
+                    transition: all .4s ease-in-out;
+                    &:hover{
+                        background-color: var(--color-secondary);
+                        i{
+                            color: var(--color-primary);
+                        }
+                    }
+                    i{
+                        display: flex;
+                        align-items: center;
+                        justify-self: center;
+                        font-size: 1.3rem;
+                    }
+                }
             }
         }
         .i-c-2{
