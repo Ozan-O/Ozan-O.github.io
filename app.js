@@ -136,4 +136,14 @@ function activateInfo(id){
     });
 }
 
+function sendForm(){
+    let fields = {};
+    fields.name = document.getElementById('cname').value;
+    fields.email = document.getElementById('cmail').value;
+    fields.subject = document.getElementById('csubject').value;
+    fields.message = document.getElementById('cmessage').value;
+
+    console.log(fields);
+}
+
 pageTransitions();

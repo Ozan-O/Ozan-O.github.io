@@ -283,27 +283,40 @@ section {
   line-height: 2rem;
 }
 
-.git-btn {
+.head-btns {
   position: absolute;
   right: 5%;
   top: 5%;
   height: 3rem;
-  width: 3rem;
+  display: flex;
+  gap: 1rem;
 }
-.git-btn .btn-icon {
+.head-btns a {
+  position: relative;
+  gap: 1rem;
+  right: 5%;
+  top: 5%;
+  height: 3rem;
+  width: 3rem;
+  padding-left: 1rem;
+}
+.head-btns a .btn-icon {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
 }
-.git-btn .btn-icon i {
+.head-btns a .btn-icon i {
   height: 3rem;
   font-size: 3rem;
   color: var(--color-white);
   pointer-events: none;
 }
-.git-btn .btn-icon:hover i {
+.head-btns a .btn-icon:hover i {
   transition: all 0.4s ease-in-out;
   color: var(--color-secondary);
+}
+.head-btns .git-btn {
+  padding-left: 1.1rem;
 }
 
 .btn-con {
@@ -508,10 +521,11 @@ section {
   padding-top: 2rem;
   padding-left: 2rem;
   align-items: center;
+  justify-content: center;
 }
 .portfolio-container .info-pane .text-container .tech-info .icons {
   padding-left: 1rem;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .portfolio-container .remove-pane {
   transition: all 0.4s ease-in-out;
@@ -528,9 +542,9 @@ section {
 
 .c-icon {
   filter: var(--svg-filter-1);
-  height: 2rem;
-  width: 2rem;
-  padding-top: 8px;
+  height: 4.5rem;
+  width: 4.5rem;
+  padding-top: 22px;
   /* Other styles here */
 }
 

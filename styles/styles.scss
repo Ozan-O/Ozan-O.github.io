@@ -264,29 +264,42 @@ section{
 }
 
 // independent component
-.git-btn{
+.head-btns{
     position: absolute;
     right: 5%;
     top: 5%;
     height: 3rem;
-    width: 3rem;
-
-    .btn-icon{
+    display: flex;
+    gap: 1rem;
+    a{
+        position: relative;
+        gap: 1rem;
+        right: 5%;
+        top: 5%;
         height: 3rem;
         width: 3rem;
-        border-radius: 50%;
-        i{
+        padding-left: 1rem;
+
+        .btn-icon{
             height: 3rem;
-            font-size: 3rem;
-            color: var(--color-white);
-            pointer-events: none;                       
-        }
-        &:hover{
+            width: 3rem;
+            border-radius: 50%;
             i{
-                transition: all .4s ease-in-out;
-                color: var(--color-secondary);
+                height: 3rem;
+                font-size: 3rem;
+                color: var(--color-white);
+                pointer-events: none;               
+            }
+            &:hover{
+                i{
+                    transition: all .4s ease-in-out;
+                    color: var(--color-secondary);
+                }
             }
         }
+    }
+    .git-btn{
+        padding-left: 1.1rem;
     }
 }
 
@@ -497,9 +510,10 @@ section{
                 padding-top: 2rem;
                 padding-left: 2rem;
                 align-items: center;
+                justify-content: center;
                 .icons{
                     padding-left: 1rem;
-                    font-size: 2rem;                    
+                    font-size: 4rem;                    
                 }
 
             }
@@ -522,9 +536,9 @@ section{
 
 .c-icon {
     filter: var(--svg-filter-1);
-    height: 2rem;
-    width: 2rem;
-    padding-top: 8px;
+    height: 4.5rem;
+    width: 4.5rem;
+    padding-top: 22px;
     /* Other styles here */
 }
 
