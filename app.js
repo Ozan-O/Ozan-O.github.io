@@ -117,8 +117,15 @@ const themeBtn = document.querySelector('.theme-btn');
 
 themeBtn.addEventListener('click', (e)=>{
         let element = document.body;
+        let icon = document.getElementById('title-icon');
 
         element.classList.toggle('light-mode');
+
+        if (icon.getAttribute('href') == 'icons/titleC.svg'){
+            icon.setAttribute('href', 'icons/titleM.svg');
+        }else {
+            icon.setAttribute('href', 'icons/titleC.svg');
+        }        
 });
 
 function activateInfo(id){
