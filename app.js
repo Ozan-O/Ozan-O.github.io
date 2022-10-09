@@ -118,13 +118,16 @@ const themeBtn = document.querySelector('.theme-btn');
 themeBtn.addEventListener('click', (e)=>{
         let element = document.body;
         let icon = document.getElementById('title-icon');
+        let logo = document.getElementById('home-logo')
 
         element.classList.toggle('light-mode');
 
         if (icon.getAttribute('href') == 'icons/titleC.svg'){
             icon.setAttribute('href', 'icons/titleM.svg');
+            logo.setAttribute('src', 'icons/titleM.svg');
         }else {
             icon.setAttribute('href', 'icons/titleC.svg');
+            logo.setAttribute('src', 'icons/titleC.svg');
         }        
 });
 

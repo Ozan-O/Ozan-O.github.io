@@ -259,7 +259,10 @@ section{
             margin: 1.5rem 0;
             line-height: 2rem;
         }
-
+        .home-logo{
+            padding-left: 1.2rem;
+            padding-bottom: 6px;
+        }
     }
 }
 
@@ -501,21 +504,44 @@ section{
             top: 150px;
             left: 5%;
             width: 40%;
-            height: 38%;
-            .info-text{
-                padding: 2rem;
-            }
+            border-radius: 25px;
+            padding: 1rem;         
             .tech-info{
                 display: flex;
-                padding-top: 2rem;
+                padding-top: 1rem;
                 padding-left: 2rem;
+                padding-bottom: 1rem;
                 align-items: center;
                 justify-content: center;
                 .icons{
                     padding-left: 1rem;
-                    font-size: 4rem;                    
+                    font-size: 4rem;         
                 }
-
+            }
+            .main-info{
+                display: grid;
+                grid-template-columns: 1fr 40%;
+                .info-text{
+                    padding: 2rem;
+                }
+                .info-images{
+                    
+                    .image-container{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        img{
+                            transition: all .4s ease-in-out;
+                            &:hover{
+                                transform: scale(2);
+                            }
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 25px;
+                    }
+                }
             }
         }              
     }

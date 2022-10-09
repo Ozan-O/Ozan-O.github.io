@@ -282,6 +282,10 @@ section {
   margin: 1.5rem 0;
   line-height: 2rem;
 }
+.header-content .right-header .home-logo {
+  padding-left: 1.2rem;
+  padding-bottom: 6px;
+}
 
 .head-btns {
   position: absolute;
@@ -511,21 +515,42 @@ section {
   top: 150px;
   left: 5%;
   width: 40%;
-  height: 38%;
-}
-.portfolio-container .info-pane .text-container .info-text {
-  padding: 2rem;
+  border-radius: 25px;
+  padding: 1rem;
 }
 .portfolio-container .info-pane .text-container .tech-info {
   display: flex;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-left: 2rem;
+  padding-bottom: 1rem;
   align-items: center;
   justify-content: center;
 }
 .portfolio-container .info-pane .text-container .tech-info .icons {
   padding-left: 1rem;
   font-size: 4rem;
+}
+.portfolio-container .info-pane .text-container .main-info {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+}
+.portfolio-container .info-pane .text-container .main-info .info-text {
+  padding: 2rem;
+}
+.portfolio-container .info-pane .text-container .main-info .info-images .image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.portfolio-container .info-pane .text-container .main-info .info-images .image-container img {
+  transition: all 0.4s ease-in-out;
+}
+.portfolio-container .info-pane .text-container .main-info .info-images .image-container img:hover {
+  transform: scale(2);
+}
+.portfolio-container .info-pane .text-container .main-info .info-images img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
 }
 .portfolio-container .remove-pane {
   transition: all 0.4s ease-in-out;
