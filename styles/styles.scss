@@ -55,7 +55,7 @@ a{
 }
 
 header{
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -268,8 +268,8 @@ section{
 
 // independent component
 .head-btns{
-    position: absolute;
-    right: 5%;
+    position: fixed;
+    right: 7%;
     top: 5%;
     height: 3rem;
     display: flex;
@@ -751,3 +751,5 @@ section{
         }
     }
 }
+
+@import './media';
