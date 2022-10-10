@@ -775,9 +775,61 @@ section {
   .right-header .name {
     font-size: 2.5rem !important;
   }
+  .right-header .head-btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 0.5rem;
+    right: 5%;
+    top: 2%;
+  }
+  .right-header .head-btns a {
+    padding-left: 1.5rem;
+  }
+  .right-header .head-btns a i {
+    height: 2rem;
+    font-size: 2rem;
+  }
+  .right-header .head-btns a .btn-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+  .right-header .head-btns .git-btn {
+    padding-left: 1.1rem;
+  }
+  .right-header .head-btns .git-btn i {
+    font-size: 2rem;
+  }
+  .right-header .head-btns .home-logo {
+    grid-row: 1;
+    margin-right: 0.8rem;
+    padding-bottom: 1rem;
+  }
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+  .main-info {
+    grid-template-columns: 1fr !important;
+  }
+  .contact-content-cont {
+    display: block;
+  }
+  .contact-content-cont .right-contact {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .section {
+    padding: 2rem 2.5rem !important;
   }
   .controls {
     top: auto;

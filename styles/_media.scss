@@ -27,11 +27,68 @@
         .name{
             font-size: 2.5rem !important;
         }
+        .head-btns{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-right: .5rem;
+            right: 5%;
+            top: 2%;
+            a{
+                padding-left: 1.5rem;
+                i{  
+                    height: 2rem;
+                    font-size: 2rem;
+                }
+                .btn-icon{
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+            .git-btn{
+                padding-left: 1.1rem;
+                i{
+                    font-size: 2rem;
+                }
+            }
+
+            .home-logo{
+                grid-row: 1;
+                margin-right: .8rem;
+                padding-bottom: 1rem;
+            }
+        }
     }
     .header-content .left-header .image{
         margin: 0 auto;
         width: 90%;
+    }
 
+    .about-container{
+        grid-template-columns: 1fr;
+        .right-about{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+    }
+
+    .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+
+    .main-info{
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-content-cont{
+        display: block;
+        .right-contact{
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+    }
+
+    .section{
+        padding: 2rem 2.5rem !important;
     }
 
     .controls{
