@@ -354,6 +354,16 @@ section{
         }
     }
 }
+button{
+    background-color: var(--color-primary);
+    transition: all .4s ease-in-out;
+    
+    
+    &:hover{
+        background-color: var(--color-secondary);
+    }
+    
+}
 
 
 //About page
