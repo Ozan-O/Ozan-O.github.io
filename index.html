@@ -404,7 +404,7 @@
                             </div>
                         </div>
                     </div>
-                    <form onsubmit="return false" class="contact-form">
+                    <form onsubmit='sendEmail(); reset(); return false' class="contact-form">
                         <div class="input-control i-c-2">
                             <input type="text" required placeholder="Uw naam" id="cname">
                             <input type="email" required placeholder="Uw E-Mailadres" id="cmail">
@@ -416,10 +416,10 @@
                             <textarea name=""  cols="15" rows="8" placeholder="Type hier uw bericht" id="cmessage"></textarea>
                         </div>
                         <div class="submit-btn">
-                            <a href="javascript:sendForm();" class="main-btn">
+                            <button type="submit" class="main-btn">
                                 <span class="btn-text">Binnenkort beschikbaar</span>
                                 <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -450,5 +450,27 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            let fields = {};
+            fields.name = document.getElementById('cname').value;
+            fields.email = document.getElementById('cmail').value;
+            fields.subject = document.getElementById('csubject').value;
+            fields.message = document.getElementById('cmessage').value;
+
+            console.log(fields);
+
+            Email.send({
+                SecureToken : "4b4ddffb-e7e6-4739-b38c-77199c431716",
+                To : 'o.m.ozmih@gmail.com',
+                From : fields.name + " " + fields.email,
+                Subject : fields.subject,
+                Body : fields.message
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>    
 </body>
 </html>
