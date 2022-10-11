@@ -464,9 +464,9 @@
             Email.send({
                 SecureToken : "4b4ddffb-e7e6-4739-b38c-77199c431716",
                 To : 'o.m.ozmih@gmail.com',
-                From : fields.name + " " + fields.email,
+                From : 'ozan.ozmih06@gmail.com',
                 Subject : fields.subject,
-                Body : fields.message
+                Body : fields.name + " - " + fields.email + " wrote: " + fields.message
             }).then(
                 message => alert(message)
             );
