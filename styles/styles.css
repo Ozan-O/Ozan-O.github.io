@@ -785,6 +785,9 @@ button:hover {
   .left-header .h-shape {
     display: none;
   }
+  .left-header .bg {
+    top: -101.2% !important;
+  }
   .right-header {
     grid-row: 1;
     margin: 0 auto;
