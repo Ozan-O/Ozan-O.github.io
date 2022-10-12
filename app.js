@@ -109,6 +109,7 @@ function pageTransitions(){
             
             const element = document.getElementById(id);
             element.classList.add('active');
+            window.scrollTo(0, 0);
         }
     });    
 }
