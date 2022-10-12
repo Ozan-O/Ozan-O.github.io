@@ -797,6 +797,8 @@ button:hover {
   }
   .right-header .head-btns {
     display: grid;
+    width: 55px;
+    height: 55px;
     grid-template-columns: 1fr;
     margin-right: 0.5rem;
     right: 5%;
@@ -820,6 +822,7 @@ button:hover {
     font-size: 2rem;
   }
   .right-header .head-btns .home-logo {
+    width: 100%;
     grid-row: 1;
     margin-right: 0.8rem;
     padding-bottom: 1rem;

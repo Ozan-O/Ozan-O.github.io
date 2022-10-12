@@ -39,6 +39,8 @@
         }
         .head-btns{
             display: grid;
+            width: 55px;
+            height: 55px;
             grid-template-columns: 1fr;
             margin-right: .5rem;
             right: 5%;
@@ -62,6 +64,7 @@
             }
 
             .home-logo{
+                width: 100%;
                 grid-row: 1;
                 margin-right: .8rem;
                 padding-bottom: 1rem;
