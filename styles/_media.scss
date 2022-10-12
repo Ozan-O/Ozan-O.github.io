@@ -65,6 +65,27 @@
             }
         }
     }
+
+    .home-icons{
+        i{
+            font-size: 2.5rem;
+            padding-left: 10px;
+        }
+        :first-child{
+            padding-left: 7px;
+        }
+        :last-child{
+            font-size: 1.5rem;
+        }
+    }
+    .c-icon2 {
+        filter: var(--svg-filter-1);
+        height: 2.8rem;
+        width: 2.8rem;
+        padding-top: 12px;
+        /* Other styles here */
+    }
+
     .header-content .left-header .image{
         margin: 0 auto;
         width: 90%;
@@ -80,7 +101,7 @@
 
     .portfolio-container{
         grid-template-columns: 1fr;
-        margin-bottom: 5rem;
+        margin-bottom: 8rem;
     }
 
     .main-info{
