@@ -535,6 +535,8 @@ button:hover {
   justify-content: center;
 }
 .portfolio-container .info-pane .text-container .tech-info .icons {
+  align-items: center;
+  justify-content: center;
   padding-left: 1rem;
   font-size: 4rem;
 }
@@ -731,17 +733,19 @@ button:hover {
 }
 
 .info-title {
+  position: absolute;
+  width: 100%;
+  top: 40px;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 .info-title h2 {
-  position: absolute;
+  position: relative;
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 7000;
-  left: 15%;
-  top: 40px;
+  left: 0%;
 }
 .info-title h2 span {
   color: var(--color-secondary);
@@ -759,8 +763,12 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    margin-bottom: 170px;
+  }
   header {
-    padding: 0;
+    overflow: visible;
+    padding-bottom: 5rem;
   }
   header .right-header {
     padding: 2rem !important;
@@ -772,6 +780,7 @@ button:hover {
   }
   .header-content {
     grid-template-columns: 1fr;
+    margin-bottom: 5rem;
   }
   .left-header .h-shape {
     display: none;
@@ -825,9 +834,13 @@ button:hover {
   }
   .portfolio-container {
     grid-template-columns: 1fr;
+    margin-bottom: 5rem;
   }
   .main-info {
     grid-template-columns: 1fr !important;
+  }
+  .contact-container {
+    margin-bottom: 5rem;
   }
   .contact-content-cont {
     display: block;

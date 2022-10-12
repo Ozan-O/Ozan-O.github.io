@@ -356,13 +356,11 @@ section{
 }
 button{
     background-color: var(--color-primary);
-    transition: all .4s ease-in-out;
-    
+    transition: all .4s ease-in-out;    
     
     &:hover{
         background-color: var(--color-secondary);
-    }
-    
+    }    
 }
 
 
@@ -524,6 +522,8 @@ button{
                 align-items: center;
                 justify-content: center;
                 .icons{
+                    align-items: center;
+                    justify-content: center;
                     padding-left: 1rem;
                     font-size: 4rem;         
                 }
@@ -735,16 +735,18 @@ button{
 }
 
 .info-title{
+    position: absolute;
+    width:100%;
+    top: 40px;
     align-items: center;
     justify-content: center;
     text-align: center;
     h2{
-        position: absolute;
+        position: relative;
         text-transform: uppercase;
         font-size: 4rem;
         font-weight: 7000;
-        left: 15%;
-        top: 40px;
+        left: 0%;
         span{
             color: var(--color-secondary);
         }

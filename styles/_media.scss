@@ -1,7 +1,13 @@
 
 @media screen and (max-width: 600px){
+
+    body{
+        margin-bottom: 170px;
+    }
+
     header{
-        padding: 0;        
+        overflow: visible;        
+        padding-bottom: 5rem; 
     }
     header .right-header{
         padding: 2rem !important;
@@ -15,6 +21,7 @@
 
     .header-content{
         grid-template-columns: 1fr;
+        margin-bottom: 5rem;
     }
     .left-header{
         .h-shape{
@@ -73,10 +80,15 @@
 
     .portfolio-container{
         grid-template-columns: 1fr;
+        margin-bottom: 5rem;
     }
 
     .main-info{
         grid-template-columns: 1fr !important;
+    }
+
+    .contact-container{
+        margin-bottom: 5rem;
     }
 
     .contact-content-cont{
